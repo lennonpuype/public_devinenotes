@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 6rem 1fr;
+}
+
+.controlbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

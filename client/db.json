@@ -1,0 +1,47 @@
+{
+  "notes": [
+    {
+      "title": "De 1ste sprint naar master",
+      "description": "Dit is het resultaat van de eerste sprint die ik heb gedaan, er zijn zeker nog dingen die kunnen verbeteren maar de belangrijkste elementen functioneren zonder enige errors",
+      "id": "3ee6cc89-ce66-4324-bb21-8d10d9952cc9",
+      "time": 1554315033943,
+      "color": "pink"
+    },
+    {
+      "title": "Ze veranderen ook van kleur",
+      "description": "Elke keer je een note aanmaakt kiest de computer uit 4 random kleuren 1 uit, deze word doorgegeven naar de detailpagina",
+      "id": "5c5846a7-b08e-4e9f-a623-411c16da2237",
+      "time": 1554316512924,
+      "color": "orange"
+    },
+    {
+      "title": "En nu de server side die we zullen implementeren",
+      "description": "We gaan nu zowel een client als serverside hebben. Alles uit de client zal communiceren met de serverside",
+      "id": "dff133c0-76d3-4e8f-88ff-5302fec642e7",
+      "time": 1554383908092,
+      "color": "blue"
+    }
+  ],
+  "comments": [
+    {
+      "noteId": "3ee6cc89-ce66-4324-bb21-8d10d9952cc9",
+      "comment": "De Comments werken duidelijk ook",
+      "id": "96c482ef-4359-4616-8bd6-051179ba55de"
+    },
+    {
+      "noteId": "3ee6cc89-ce66-4324-bb21-8d10d9952cc9",
+      "comment": "Zoals je ziet worden ze wel enkel gerendered na een reload ...",
+      "id": "37263395-e894-4e5d-9d0b-2e9f98ee3a42"
+    },
+    {
+      "noteId": "5c5846a7-b08e-4e9f-a623-411c16da2237",
+      "comment": "Weee, Kei Cool!!",
+      "id": "855803d8-17de-49aa-af1b-22befe016dde"
+    },
+    {
+      "noteId": "5c5846a7-b08e-4e9f-a623-411c16da2237",
+      "comment": "En da probleem is nu ook gefixed eja. LEKKER!",
+      "id": "039de53b-f0c0-44c8-ad71-c56fd49eab14"
+    }
+  ]
+}

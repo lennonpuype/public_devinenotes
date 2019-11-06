@@ -1,0 +1,318 @@
+@import './reset.css';
+@import "./colors.module.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+textarea, input{
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* darkmode */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #10171d;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .register_button{
+  color: white;
+}
+
+.light-mode .login_register_btn{
+  background: white;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .login_register_btn{
+  background: RGBA(16, 22, 28, .9);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .loggedin_section{
+  background: RGBA(16, 22, 28, .9);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .add_note{
+  background-color: #10161C;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .inputfield{
+  border-color:  white;
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.dark-mode .inputfield:focus{
+  box-shadow: 0 0 0.5rem #3EF6FE;
+}
+
+.light-mode .inputfield:focus{
+  box-shadow: 0 0 0.5rem #3EF6FE;
+}
+
+.dark-mode .inputfield_small{
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.dark-mode .goback_login_register{
+  border-color: white;
+  color: white;
+}
+
+.dark-mode .single_comment + .single_comment {
+  border-color:  white;
+}
+
+.dark-mode .privacyBox_privacy > input[type="radio"]:checked+.label_active_privacty{
+  color:black!important;
+}
+
+.dark-mode .textarea_comment{
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.dark-mode .textarea_comment::placeholder{
+  color: white;
+}
+
+.light-mode .textarea_comment::placeholder{
+  color: black;
+}
+
+.light-mode .textarea_comment{
+  background-color: white;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.3em;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #006688;
+  }
+
+  button {
+    color: #006688;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+body.dark-mode .content code {
+  background-color: #1b2938;
+  transition: background-color 0.3s ease;
+}
+
+/*Toggle Darkmode*/
+@media only screen and (max-width: 650px){
+  .dark-mode-toggle {
+    display: flex;
+    flex-direction: column;
+    right: 1rem;
+    bottom: 1rem;
+    position: fixed;
+    z-index: 1000;
+    margin-top: .4rem;
+  }
+
+  .toggle-control{
+    display: none !important;
+  }
+
+  .button_symbol{
+    margin: .2rem 0;
+  }
+}
+
+@media only screen and (min-width: 651px){
+  .dark-mode-toggle {
+    display: flex;
+    flex-direction: row;
+    right: 1rem;
+    bottom: 1rem;
+    position: absolute;
+    margin-top: .0rem;
+    z-index: 1000000;
+  }
+
+  .toggle-control{
+    display: block;
+  }
+  
+  .button_symbol{
+    margin:  0;
+  }
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'].dmcheck {
+  width: 40px;
+  height: 10px;
+  background: #3EF6FE;
+  transition: background-color 0.3s ease;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+  border: none;
+  box-shadow: inset 0 0 0.2rem .02rem #4E95B2;
+
+  &:checked + label {
+    left: 30px;
+  }
+
+  &:focus-visible {
+    outline: solid 2px white;
+  }
+}
+
+input[type='checkbox'].dmcheck + label{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  transition: background-color 0.3s ease;
+  opacity: 0.9;
+  background-color: #ffffff;
+}
+
+input[type='checkbox'].dmcheck:checked + label{
+  left: 30px;
+}
+
+.light-mode input[type='checkbox'].dmcheck + label{
+  background-color: #10161C;
+  transition: background-color 0.3s ease;
+}
+
+/*button*/
+.button_symbol{
+  cursor: pointer;
+  color: white;
+  border-radius: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #10161C;
+  transition: background-color 0.3s ease;
+  border: .2rem solid white;
+  outline: none;
+}
+
+.light-mode .button_symbol:nth-of-type(1){
+  color: #10161C;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  border: .2rem solid #10161C;
+}
+
+.dark-mode .button_symbol:nth-of-type(1){
+  color: white;
+  background-color: #10161C;
+  transition: background-color 0.3s ease;
+  border: .2rem solid #10161C;
+}
+
+.light-mode .button_symbol:nth-of-type(2){
+  background-color: white;
+  transition: background-color 0.3s ease;
+  color: #10161C;
+}
+
+.dark-mode .button_symbol:nth-of-type(2){
+  background-color: #10161C;
+  transition: background-color 0.3s ease;
+  color: white;
+  border: .2rem solid white;
+}
+

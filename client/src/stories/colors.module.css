@@ -1,0 +1,22 @@
+:global(:root){
+  --accent-color: #58a5f0;
+  --primary-color: #0277bd;
+  --dark-color: #444444;
+  --light-color: rgb(243, 241, 241);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.dark {
+  color: var(--dark-color);
+}
+
+.light {
+  color: var(--light-color);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "devinenotes",
+  "version": "2.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:devinehowest/wad-opdracht-2019-lennonpuype1/tree/master",
+  "author": "Lennon Puype <lennon.puype@student.howest.be>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd server/ && yarn && yarn start",
+    "build": "cd client/ && yarn && yarn build"
+  },
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ]
+}

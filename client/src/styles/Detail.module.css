@@ -1,0 +1,419 @@
+.section{
+  display: grid;
+  grid-template-columns: 26rem 26rem;
+  grid-template-areas: "note comments";
+  border: .1rem solid ;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.note{
+  margin:0;
+  padding: 1.7rem 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comments{
+  display: grid;
+  grid-template-rows: 22rem 11rem;
+  grid-template-areas: "comments""form";
+}
+
+.commentlist{
+  overflow: scroll;
+  max-height: 15rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.form_post{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.textarea{
+  padding: 1rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  resize: none;
+  border: .1rem solid;
+}
+
+.button_post{
+  cursor: pointer;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  margin: .5rem auto 0;
+}
+
+.button_post:disabled{
+  background-color: #e2e2e2; 
+  color: grey;
+}
+
+.comment_section{
+  padding: 2rem;
+  
+}
+
+.commentlist > li{
+  padding-bottom: 1rem;
+}
+
+::placeholder{
+  font-style: italic;
+}
+
+.note_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.back_arrow{
+  vertical-align: text-top;
+}
+
+.backbtn{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(255,255,255,255);
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.editbtn{
+  cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    padding: 0rem 0.5rem;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.deletebtn{
+  cursor: pointer;
+  text-decoration: underline;
+  color: red;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+.edit_input{
+  border-radius: 0;
+  border: none;
+  border-bottom: .1rem solid;
+  color: white;
+  padding: .5rem 0;
+  background-color: rgba(0,0,0,0);
+  font-size: 1rem;
+}
+
+.edit_textarea{
+  border-radius: 0;
+  border: .1rem solid var(--green);
+  color: white;
+  padding: .5rem;
+  background-color: rgba(0,0,0,0);
+  font-size: 1rem;
+  resize: none;
+  width: 84%;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+::placeholder{
+  color:white;
+}
+
+.edit_textarea{
+  color:white;
+}
+
+.comments_li{
+  display: grid;
+    grid-template-columns: 5rem 2rem 15rem;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "datetime . message""datetime . by";
+    grid-row-gap: .4rem;
+    padding: 1rem 0;
+}
+
+.comments_li + .comments_li {
+  border-top: .1rem solid black;
+}
+
+.datetime{
+  display: flex;
+  flex-direction: column;
+  grid-area: datetime;
+  font-style: italic;
+  justify-content: center;
+}
+
+.message{
+  grid-area: message;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.commentby{
+  grid-area: by;
+  font-size: .8em;
+  font-style: italic;
+}
+
+.note > article > p {
+  margin-top: 2rem;
+}
+
+.section_edit{
+  display: grid;
+  grid-template-columns: 52rem 0rem;
+  grid-template-areas: "note comments";
+  border: .1rem solid;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.green{
+  color: var(--green);
+}
+
+.buttons{
+  position: absolute;
+  width: 14rem;
+  display: flex;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+}
+
+.blue_bg{
+  background-color: var(--blue);
+}
+
+.blue_border{
+  border-color: var(--blue);
+}
+
+.blue_color{
+  color: var(--blue);
+}
+
+.blue_bg_light{
+  background-color: var(--blue-light);
+}
+
+.blue_color_light{
+  color: var(--blue-light);
+}
+
+.blue_border_light{
+  border-color: var(--blue-light);
+}
+
+.green_bg{
+  background-color: var(--green);
+}
+
+.green_border{
+  border-color: var(--green);
+}
+
+.green_color{
+  color: var(--green);
+}
+
+.green_bg_light{
+  background-color: var(--green-light);
+}
+
+.green_color_light{
+  color: var(--green-light);
+}
+
+.green_border_light{
+  border-color: var(--green-light);
+}
+
+.orange_bg{
+  background-color: var(--orange);
+}
+
+.orange_border{
+  border-color: var(--orange);
+}
+
+.orange_color{
+  color: var(--orange);
+}
+
+.orange_bg_light{
+  background-color: var(--orange-light);
+}
+
+.orange_color_light{
+  color: var(--orange-light);
+}
+
+.orange_border_light{
+  border-color: var(--orange-light);
+}
+
+.pink_bg{
+  background-color: var(--pink);
+}
+
+.pink_border{
+  border-color: var(--pink);
+}
+
+.pink_color{
+  color: var(--pink);
+}
+
+.pink_bg_light{
+  background-color: var(--pink-light);
+}
+
+.pink_color_light{
+  color: var(--pink-light);
+}
+
+.pink_border_light{
+  border-color: var(--pink-light);
+}
+
+.comments_big{
+  grid-template-rows: 29rem 4rem !important;
+}
+
+.comment_size_big{
+  max-height: 23rem;
+}
+
+.by{
+  align-self: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.shadow_blue{
+  box-shadow: 0 0 1rem var(--blue);
+}
+
+.shadow_pink{
+  box-shadow: 0 0 1rem var(--pink);
+}
+
+.shadow_green{
+  box-shadow: 0 0 1rem var(--green);
+}
+
+.shadow_orange{
+  box-shadow: 0 0 1rem var(--orange);
+}
+
+
+
+.restricted_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.restricted_section nav{
+  margin-top: 2rem;
+}
+
+.restricted_section nav a{
+  margin: 0 .5rem;
+  
+}
+
+.noter{
+  font-style: italic;
+  color: #3EF6FE;
+}
+
+@media only screen and (max-width: 650px){
+ 
+  .restricted_section nav a{
+    position: relative;
+    padding: 1rem;
+  }
+
+  .restricted_section nav a + a{
+   margin-top: 1rem
+  }
+
+  .restricted_section nav{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@media only screen and (max-width: 850px){
+  .section{
+    margin: 0 .5rem;
+    grid-template-columns: auto;
+    grid-template-rows: 17rem 18rem;
+    grid-template-areas: "note""comments";
+  }
+
+  .comments_big{
+    grid-template-rows: 14rem 4rem !important;
+  }
+
+  .textarea{
+    width: 50%;
+  }
+
+  .form_post{
+    flex-direction: row;
+    z-index: 100;
+  }
+
+  .comments{
+    grid-template-rows: 11rem 9rem;
+  }
+
+  .button_post{
+    height: 3rem;
+    margin: 0 0 0 auto;
+  }
+
+  .commentlist{
+    max-height: 7rem;
+    margin-top: .5rem;
+  }
+}
+
+

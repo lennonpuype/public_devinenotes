@@ -1,0 +1,103 @@
+
+html, body{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.section_login{
+  width: 35rem;
+}
+
+.goback{
+  padding: .5rem 1rem;
+  border: .1rem solid black;
+  border-radius: 2rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin:-1.5rem 0 2rem 0;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+}
+
+.label + .label{
+  margin-top: 1rem;
+}
+
+.input{
+  border-radius: 2rem;
+  border: .1rem solid black;
+  padding: 1rem;
+}
+
+.login{
+  width: 10rem;
+  padding: .5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.register_btn{
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.a{
+  color:var(--primary-color);
+}
+
+.label_span{
+  margin: 0 0 .5rem 1rem;
+}
+
+.logged_in{
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+
+.person{
+  color:var(--primary-color);
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+@media only screen and (max-width: 650px){
+  
+  .section_login{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .goback{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+  }
+}

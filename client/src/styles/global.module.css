@@ -1,0 +1,63 @@
+
+
+
+.logout_btn{
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: -webkit-right;
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.login_button{
+  color: var(--primary-color);
+}
+
+.register_button{
+color: black;
+}
+
+.login_or_register{
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0 .3rem;
+  cursor: pointer;
+}
+
+.logo{
+  top: -.5rem;
+  position: absolute;
+  width: 10em
+}
+
+.logout{
+  cursor: pointer;
+  width: 2.5em;
+  margin: 0.5rem .2rem;
+}
+
+
+@media only screen and (max-width: 650px){
+  .login_btn{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 651px){
+  .login_btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    text-align: right;
+  }
+}

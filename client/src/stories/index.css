@@ -1,0 +1,21 @@
+@import "./reset.css";
+@import "./colors.module.css";
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: Roboto,sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+}

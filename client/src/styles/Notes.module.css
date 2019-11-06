@@ -1,0 +1,172 @@
+.li{
+  width: 15rem;
+  height: 15rem; 
+  border-radius: 2rem;
+  margin: 1rem;
+  list-style: none;
+  transform: scale(1);
+  transition: transform .1s ease-in-out;
+}
+
+.li:hover{
+  transform: scale(1.02);
+}
+
+
+.green{
+  background-color: var(--green);
+  box-shadow: 0px 0px 10px var(--green);
+}
+
+.orange{
+  background-color: var(--orange);
+  box-shadow: 0px 0px 10px var(--orange);
+}
+
+.blue{
+  background-color: var(--blue);
+  box-shadow: 0px 0px 10px var(--blue);
+}
+
+.pink{
+  background-color: var(--pink);
+  box-shadow: 0px 0px 10px var(--pink);
+}
+
+.add_green{
+  border: .2rem solid var(--green);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--green);
+}
+
+.add_orange{
+  border: .2rem solid var(--orange);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--orange);
+}
+
+.add_blue{
+  border: .2rem solid var(--blue);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--blue);
+}
+
+.addmain_blue{
+  border: .2rem solid var(--primary-color);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.add_pink{
+  border: .2rem solid var(--pink);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--pink);
+}
+
+.a_add_blue{
+  color:var(--blue);
+  font-size:5rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.a_addmain_blue{
+  color:var(--primary-color);
+  font-size:5rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.a_add_pink{
+  color:var(--pink);
+  font-size:5rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.a_add_green{
+  color:var(--green);
+  font-size:5rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.a_add_orange{
+  color:var(--orange);
+  font-size:5rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 96em;
+}
+
+.a{
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label{
+  padding: .4rem 1rem;
+  margin: 0 .1rem;
+  transition: background-color .2s, border-radius .2s ease-in-out;
+}
+
+.label:hover{
+  background-color: var(--primary-color)70;
+  border-radius: .7rem;
+}
+
+
+.privacyBox > input[type="radio"]:checked+.label{
+  background-color: var(--primary-color);
+  font-style: italic;
+  border-radius: .7rem;
+}
+
+.privacyBox > input {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 650px){
+  .privacyBox{
+    position: fixed;
+    text-align: center;
+    bottom:5.5rem;
+    z-index: 101;
+    
+  }
+}
+
+@media only screen and (min-width: 651px){
+  .privacyBox{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+}

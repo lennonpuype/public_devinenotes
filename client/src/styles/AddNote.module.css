@@ -1,0 +1,170 @@
+.li{
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.form{
+  display: grid;
+
+  grid-template-columns: 1fr 13rem 1fr;
+  grid-template-rows: repeat(7,auto);
+  grid-template-areas: ". privacy ."". label1 ."". input1 ."" . label2 ."". input2 ."". post ."". cancel .";
+  grid-row-gap: .2rem;
+}
+
+.title_label{
+  grid-area: label1;
+  align-self: end;
+}
+
+.title_input{
+  grid-area: input1;
+  padding-left: 1rem;
+}
+
+.desc_label{
+  grid-area: label2;
+  align-self: end;
+}
+
+.desc_input{
+  grid-area: input2;
+  padding-left: 1rem;
+}
+
+.post{
+  grid-area: post;
+  height: 3rem;
+  align-self: end;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border-radius: 4rem;
+  margin:0;
+  transition: box-shadow .2s ease-in-out;
+}
+.post:hover{
+  box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.2);
+}
+
+.blue_bg{
+  background-color: var(--blue);
+  box-shadow: 0px 0px 10px var(--blue);
+}
+
+.blue_border{
+  border-color: var(--blue);
+}
+
+.blue_color{
+  color: var(--blue);
+}
+
+.green_bg{
+  background-color: var(--green);
+  box-shadow: 0px 0px 10px var(--green);
+}
+
+.green_border{
+  border-color: var(--green);
+}
+
+.green_color{
+  color: var(--green);
+}
+
+.orange_bg{
+  background-color: var(--orange);
+  box-shadow: 0px 0px 10px var(--orange);
+}
+
+.orange_border{
+  border-color: var(--orange);
+}
+
+.orange_color{
+  color: var(--orange);
+}
+
+.pink_bg{
+  background-color: var(--pink);
+  box-shadow: 0px 0px 10px var(--pink);
+}
+
+.pink_border{
+  border-color: var(--pink);
+}
+
+.pink_color{
+  color: var(--pink);
+}
+
+.cancel{
+  grid-area: cancel;
+  justify-self: center;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+.add_notes_blue{
+  border: .2rem solid var(--primary-color);
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  border-radius: 2rem;
+  border: .1rem solid black;
+}
+
+.privacy_section{
+  grid-area: privacy;
+  align-self: end;
+  justify-self: center;
+}
+
+.privacy_section > input {
+  display: none;
+}
+
+.privacy_section > label{
+  
+  padding: .4rem 1rem;
+  margin: 0 .5rem;
+}
+
+.privacy_section > input[type="radio"]:checked+label {
+  border-radius: 0.6rem;
+}
+
+.privacy_section > input[type="radio"]:checked+.label_blue {
+  background-color: var(--blue);
+  color: white;
+}
+
+.privacy_section > input[type="radio"]:checked+.label_pink {
+  background-color: var(--pink);
+  color: white;
+}
+
+.privacy_section > input[type="radio"]:checked+.label_green {
+  background-color: var(--green);
+  color: white;
+}
+
+.privacy_section > input[type="radio"]:checked+.label_orange {
+  background-color: var(--orange);
+  color: white;
+}
+

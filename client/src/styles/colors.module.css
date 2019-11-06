@@ -1,0 +1,56 @@
+:global(:root){
+  --primary-color: #3EF6FE;
+  --blue-light: #6ef1f1;
+  --blue:#4DDADA;
+  --green-light: #4DFD61;
+  --green:#45F06D;
+  --pink-light: #de56e0;
+  --pink:#C331C5;
+  --orange-light: #f99a71;
+  --orange:#FC8B5A;
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-blue-light {
+  color: var(--blue-light);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+.color-green-light {
+  color: var(--green-light);
+}
+
+.color-green {
+  color: var(--green);
+}
+
+.color-pink-light {
+  color: var(--pink-light);
+}
+
+.color-pink {
+  color: var(--pink);
+}
+
+.color-pink-light {
+  color: var(--pink-light);
+}
+
+.color-pink {
+  color: var(--pink);
+}
+
+.color-orange-light {
+  color: var(--orange-light);
+}
+
+.color-orange {
+  color: var(--orange);
+}
+

@@ -1,0 +1,32 @@
+.textInput {
+  flex: 1;
+  font-size: 2rem;
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom:.1rem solid white;
+  outline: none;
+
+  margin:  0 2rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: none;
+  border: none;
+
+  height: 100%;
+
+  background-color:var(--accent-color);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+}
+
+.button:active {
+  background-color: var(--primary-color);
+}
